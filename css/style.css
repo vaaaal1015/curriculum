@@ -9,3 +9,7 @@ tfoot {
     background-color: rgb(138, 138, 138);
     color: #fff;
 }
+
+.selection {
+    color: red;
+}
