@@ -21,7 +21,7 @@ $(document).ready(function(){
         var i;
         var j;
         let week = ['日','一','二','三','四','五','六'];  
-      
+
         for(i = 1; i <= 13; i++) {
             str += "<tr>"
             for(j = 0; j < week.length; j++) {
@@ -31,7 +31,7 @@ $(document).ready(function(){
             str += "</tr>"
         }
         
-        $output.html(`<table border="1"><tbody>${str}</tbody></table>`);
+        $output.html(`<tbody>${str}</tbody>`);
     });
 
 
