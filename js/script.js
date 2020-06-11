@@ -14,10 +14,9 @@ $(document).ready(function(){
     let db = firebase.firestore();
     let usersRef = db.collection("資工一"); 
     let docRef = usersRef.doc("課表");
-    let str = "";
 
     docRef.onSnapshot(function(doc) {
-        let str = "";
+        let str = "<thead><tr><th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th></tr></thead>";
         var i;
         var j;
         let week = ['日','一','二','三','四','五','六'];  
@@ -31,7 +30,7 @@ $(document).ready(function(){
             str += "</tr>"
         }
         
-        $output.html(`<tbody>${str}</tbody>`);
+        $output.html(str);
     });
 
 
